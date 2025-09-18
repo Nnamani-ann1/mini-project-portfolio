@@ -47,7 +47,7 @@ export default function Header({ name }) {
                 </div>
             </div>
         
-            <div className='flex font-bold text-9xl justify-center mt-20' id='Projects'>PROJECTS</div>
+            <div className='flex font-bold text-5xl justify-center mt-20' id='Projects'>PROJECTS</div>
            
         </div >
     )

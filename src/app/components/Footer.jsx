@@ -1,10 +1,12 @@
 import React from 'react'
 import FooterLink from './FooterLink'
+import Image from 'next/image'
+
 export default function Footer() {
     return (
         <footer className='mx-20'>
             <div className='flex items-start'>
-                <h3>Logo</h3>
+                <Image src="/FullLogo.jpg" alt="logo" width={80} height={80} className='rounded-2xl'/>
 
                 <div className='flex gap-20 ml-80'>
 
@@ -13,16 +15,9 @@ export default function Footer() {
                         <FooterLink li="Home" link="/home" />
                         <FooterLink li="Work" link="/work" />
                         <FooterLink li="About" link="/about" />
-                        <FooterLink li="Blog" link="/blog" />
+                        
                     </ul>
-                    <ul>
-
-                         <h2 className='font-bold mb-4'>Resources</h2>
-                        <FooterLink li="Styleguide" link="/styleguide" />
-                        <FooterLink li="Changelog" link="/changelog" />
-                        <FooterLink li="Licences" link="/licences" />
-                        <FooterLink li="404" link="/not-found" />
-                    </ul>
+                  
                     <ul>
                         <h2 className='font-bold mb-5'>Socials</h2>
                         <FooterLink li="Facebook" link="/facebook" />

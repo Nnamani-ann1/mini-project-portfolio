@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
 export default function Navbar() {
   return (
@@ -16,13 +17,10 @@ export default function Navbar() {
             <Link href="#project">Projects</Link>
           </li>
         </div>
-        <li className='active:text-orange-500 hover:text-orange-500'>
-          <Link href="/logo">Logo</Link>
+        <li>
+            <Image src="/FullLogo.jpg" alt="logo" width={80} height={80} className='rounded-2xl'/>
         </li>
         <div className='flex items-center gap-5'>
-          <li className='active:text-orange-500 hover:text-orange-500'>
-            <Link href="#blogs">Blogs</Link>
-          </li>
           <li className='active:text-orange-500 hover:text-orange-500'>
             <Link href="#contact">Contact</Link>
           </li>
